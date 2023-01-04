@@ -1,0 +1,36 @@
+$bg-color: #282a36;
+$font-color: #f8f8f2;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background-color: $bg-color;
+}
+
+p {
+    color: $font-color;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#underDevelopment {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    & > div > p {
+        text-align: center;
+        font-size: 3rem;
+    }
+}
